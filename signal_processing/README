@@ -13,7 +13,7 @@ Arguments:
 Output: 2 numpy files
 
 
-**creator.py**
+__creator.py__
 
 Used for creation of training or test sets or change vectors dimension for neural network. Use "upsampling" for create dataset with augmentation.
 
@@ -25,7 +25,7 @@ Arguments:
  
 Output: 2 numpy files
 
-**denoiser.py**
+__denoiser.py__
 
 Used for denoising input file.
 
@@ -36,7 +36,7 @@ Arguments:
 
 Output: 1 numpy file
 
-**estimator.py**
+__estimator.py__
 
 Creates .csv table which summarizing result.
 
