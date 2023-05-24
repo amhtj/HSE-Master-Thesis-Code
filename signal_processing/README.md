@@ -1,4 +1,4 @@
-The code for preprocessing our signals. More detailed :
+The code for preprocessing our denoised signals. More detailed :
 
 __converter.py__
 
