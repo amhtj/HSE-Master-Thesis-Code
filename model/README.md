@@ -7,5 +7,9 @@ probability distribution $\mathbf{p_\theta(x \mid z)}$  over the latent variable
 
 The training procedure of our VAE contains low-bound maximization, called an Evidence Lower BOund (ELBO), and consist the Kullback-Leibler (KL) divergence. Our model requires computing the KL divergence between two multivariate Gaussians. Our architecture contains two identical autoencoders intersecting with each other. The encoder predicts $\mu$ and $\Sigma$ such that $\mathbf{q_\phi(z|x) = \mathcal{N} (\mu, \Sigma)}$. 
 
-Our $f_i$ marked the signal variation coefficients matching with the energy, and $\mathcal{D}i$ marked an artificially-generated dataset of signal vectors, synthesized by changing $f_i$, all other factors as $\left\{f_j, j \neq i\right\}$ being arbitrarily fixed. All $\mathcal{D}_i$ samples have an indexes and the value of variation coefficients. Moreover, almost all signals with low amplitude.
+Our $f_i$ marked the signal variation coefficients matching with the energy, and $\mathcal{D}i$ marked an artificially-generated dataset of signal vectors, synthesized by changing $f_i$.
+
+This structure of model helps to divide the training on Tunka-Rex data and on CoREAS data, the distributions obtained from the two autoencoders are coordinated with each other to create a latent space, and then the latent spaces are aligned according to the ELBO. To train the model, the parameters of both the generative model and the inference model are jointly evaluated using ELBO maximization. 
+
+
 
