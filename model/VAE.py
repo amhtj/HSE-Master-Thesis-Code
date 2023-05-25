@@ -8,8 +8,9 @@ from torch.utils import cpp_extension
 import torch.optim as optim
 import torch.autograd as autograd
 from torch.utils import data
-import ELBO
-import KL
+from fad import * 
+from ELBO import *
+from KL import *
 
 
 class Model(nn.Module):
