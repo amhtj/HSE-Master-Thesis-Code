@@ -3,11 +3,14 @@ from torch.nn import Module
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from setuptools import setup, Extension
+from torch.utils import cpp_extension
 import torch.optim as optim
 import torch.autograd as autograd
 from torch.utils import data
 import ELBO
 import KL
+
 
 class Model(nn.Module):
     def __init__(self, config):
