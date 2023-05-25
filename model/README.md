@@ -5,7 +5,7 @@ Implementation of the VAE model (```VAE.py```) from Section 4.2 of our work. Let
 Variational inference aims at finding the true conditional
 probability distribution $\mathbf{p_\theta(x \mid z)}$  over the latent variables. The parameters such as $p_\theta$ are presumed on a VAE's block called a decoder, parameterized by $\mathbf{\theta}$, and $\mathbf{z}$ is taken as input.
 
-The training procedure (```train.py ```) of our VAE contains low-bound maximization, called an Evidence Lower BOund (ELBO) (``` elbo.py ```), and consist the Kullback-Leibler (KL) divergence (```KL.py```). Our model requires computing the KL divergence between two multivariate Gaussians. Our architecture contains two identical autoencoders intersecting with each other. The encoder predicts $\mu$ and $\Sigma$ such that $\mathbf{q_\phi(z|x) = \mathcal{N} (\mu, \Sigma)}$. 
+The training procedure (```train.py```) of our VAE contains low-bound maximization, called an Evidence Lower BOund (ELBO) (``` elbo.py```), and consist the Kullback-Leibler (KL) divergence (```KL.py```). Our model requires computing the KL divergence between two multivariate Gaussians. Our architecture contains two identical autoencoders intersecting with each other. The encoder predicts $\mu$ and $\Sigma$ such that $\mathbf{q_\phi(z|x) = \mathcal{N} (\mu, \Sigma)}$. 
 
 Our $f_i$ marked the signal variation coefficients matching with the energy, and $\mathcal{D}i$ marked an artificially-generated dataset of signal vectors, synthesized by changing $f_i$.
 
