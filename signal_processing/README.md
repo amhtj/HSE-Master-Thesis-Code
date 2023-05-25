@@ -1,4 +1,4 @@
-Signal preprocessing. Short description : 
+Signal preprocessing. A brief description of the work sequence :
 
 **converter.py**
 Used for convert from ADST to numpy binary format.
