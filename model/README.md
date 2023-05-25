@@ -1,6 +1,6 @@
 Implementation of the VAE model from Section 4.2 of our work. Let's take a look at our architecture :
 
-<img src="/model/architecture.jpg" alt="Alt text">
+<img src="/model/architecture.jpg" alt="Alt text" width=50% height=50%>
 
 Variational inference aims at finding the true conditional
 probability distribution $\mathbf{p_\theta(x \mid z)}$  over the latent variables. The parameters such as $p_\theta$ are presumed on a VAE's block called a decoder, parameterized by \textbf{$\theta$}, and $\mathbf{z}$ is taken as input.
